@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stargåte App - All Things Stargate!</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-text">STARGÅTE INFO</h1>
+    </header>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="nav">
+        <ul class="navbar">
+          <li><button class="btn-nav" id="btn-search">Search 🔍</button></li>
+          <li>
+            <button class="btn-nav" id="btn-guess">Sam and Jack ❤️</button>
+          </li>
+          <li><button class="btn-nav" id="btn-videos">Videos 🎞️</button></li>
+        </ul>
+      </div>
+      <div class="container-sections">
+        <!-- Videos Section -->
+        <div class="section-videos hidden">
+          <h2 class="section-title">Videos</h2>
+          <iframe
+            src="https://drive.google.com/file/d/1o7YihgSqmiA4Q7VFNHpn7hn-SY136cRl/preview"
+            width="640"
+            height="480"
+            allow="autoplay"
+          ></iframe>
+        </div>
+        <!-- Middle Section -->
+        <div class="section-middle show">
+          <h2 class="section-title">Seasons & Episodes</h2>
+          <h3 class="section-title">Seasons Information</h3>
+          <button id="btn-seasons">Press to reveal</button>
+          <p class="results" id="results-individually">
+            Press button to show results!
+          </p>
+          <p class="results" id="results-total">
+            Press button to show results!
+          </p>
+          <h3 class="section-title">Episodes Information</h3>
+          <button id="btn-episodes">Press to reveal</button>
+          <p class="results" id="results-episodes-runtime">
+            Press button to show results!
+          </p>
+        </div>
+        <!-- Sam and Jack -->
+        <div class="section-middle-samjack hidden">
+          <h2 class="section-title">Sam and Jack ❤️</h2>
+          <h3 class="section-title">Guess their marriage season!</h3>
+          <div class="results" id="results-marriage">
+            Guess by entering a season number between 1-10.
+          </div>
+          <input type="text" name="input-marriage" id="input-marriage" />
+          <button id="btn-guess-marriage">Guess!</button>
+        </div>
+        <!-- Right Section -->
+        <div class="section-right show">
+          <h2 class="section-title">Cast & Characters</h2>
+          <div class="section-right-container show">
+            <div class="section-right-cast show">
+              <h3 class="section-title">Stargate SG-1</h3>
+              <ul>
+                <li>
+                  <button class="btn-cast" id="btn-Oneill-series">
+                    Colonel Jack O'Neill
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-cast" id="btn-Carter-series">
+                    Major Samantha Carter
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-cast" id="btn-Tealc-series">Teal'c</button>
+                </li>
+                <li>
+                  <button class="btn-cast" id="btn-Daniel-series">
+                    Doctor Daniel Jackson
+                  </button>
+                </li>
+              </ul>
+              <div class="results-series hidden">
+                <p class="results-p" id="results-series-p"></p>
+                <a id="image-link" href="#"
+                  ><img id="image" src="#" alt="Cast image"
+                /></a>
+              </div>
+            </div>
+            <div class="section-right-movie show">
+              <h3 class="section-title">Stargate Movie, 1994</h3>
+              <ul>
+                <li>
+                  <button class="btn-cast" id="btn-Oneill-Movie-series">
+                    Colonel Jack O'Neill
+                  </button>
+                </li>
+                <li>
+                  <button class="btn-cast" id="btn-Daniel-Movie-series">
+                    Doctor Daniel Jackson
+                  </button>
+                </li>
+                <button class="btn-cast" id="btn-Ra-series">
+                  <li>Ra</li>
+                </button>
+                <li>
+                  <button class="btn-cast" id="btn-Skaara-series">
+                    Skaara
+                  </button>
+                </li>
+              </ul>
+
+              <div class="results-movie hidden">
+                <p class="results-p" id="results-movie-p"></p>
+                <a id="image-link-movie" href="#"
+                  ><img id="image-movie" src="#" alt="Cast image"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="sectionsScript.js"></script>
+  </body>
+</html>

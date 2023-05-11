@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(5, 52, 123);
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px black solid; */
+  height: 5em;
+  background-image: url("img/stars.jpg");
+  background-size: cover;
+}
+
+.section-title,
+.btn-cast,
+.results,
+.results-p,
+.navbar,
+.btn-nav,
+#btn-guess-marriage {
+  color: white;
+  text-shadow: 1px 1px 5px rgb(16, 16, 16);
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 10px rgb(16, 16, 16);
+}
+
+.show {
+  display: flex;
+}
+
+.show-series {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 30em;
+  display: flex;
+  /* border: 1px black solid; */
+  padding-left: 5em;
+  /* background-image: url("img/stars2.jpg"); */
+  /* background-size: cover; */
+}
+
+.container-sections {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Navigation div and Navbar */
+
+.nav {
+  display: flex;
+  width: 10%;
+  /* border: 1px black solid; */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navbar li {
+  padding: 4em 0em;
+}
+
+.navbar button {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  cursor: pointer;
+}
+
+/* Adjustments for both info sections */
+
+.section-title {
+  text-align: center;
+  padding: 1em 0em;
+}
+
+.section-info li {
+  list-style-type: none;
+}
+
+/* Middle Section */
+.section-middle,
+.section-middle-samjack {
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  /* border: 1px black solid; */
+}
+
+#input-marriage {
+  width: 20%;
+  padding: 0em 0em;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-bottom: 3px crimson solid;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgb(0, 0, 0);
+  color: crimson;
+}
+
+#btn-guess-marriage {
+  margin: 1em 0em;
+  padding: 1em 5em;
+  border: 2px solid crimson;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+#input-marriage:focus {
+  outline: none;
+}
+
+/* Right Section */
+.section-right {
+  width: 70%;
+  flex-direction: column;
+  padding-top: 2em;
+  /* border: 1px black solid; */
+}
+
+.section-right li {
+  width: 100%;
+  list-style-type: none;
+  /* border: 1px black solid; */
+}
+
+.btn-cast {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+.section-right-container {
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 1px black solid; */
+}
+
+.section-right-cast,
+.section-right-movie {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px black solid; */
+}
+
+.section-right ul {
+  text-align: center;
+}
+
+#image,
+#image-movie {
+  max-width: 95%;
+  border-radius: 10px;
+}
+
+/* Video Section */
+.section-videos {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* border: 1px black solid; */
+}
+
+video {
+  max-width: 100%;
+}
+
+/* Result divs and buttons */
+
+.results,
+.results-series,
+.results-movie {
+  padding: 1em 0em;
+  text-align: center;
+}
+
+.results-p {
+  padding: 1em;
+}
+
+#results-cast {
+  padding-top: 1em;
+}

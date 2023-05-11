@@ -1,0 +1,13 @@
+- Voi hakea
+	- kausien lukumäärän
+	- näyttelijät
+	- roolihahmot
+	- kaikkien kuvat
+- Arvata, millä kaudella Jack ja Sam meni naimisiin ja millä romanssi alkoi
+- Katsoa Carterin ylennysvideon
+- tietoa Stargate-leffasta
+	- vuosi
+	- näyttelijät
+	- roolihahmot
+	- pituus
+	- imdb-arvio
